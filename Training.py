@@ -35,7 +35,7 @@ from sklearn.externals import joblib
 import json
 
 ##Read configuration parameters
-file_dir = '/home/cuoco/workspace/git/avazu/src/Avazu-settings.json'
+file_dir = './Avazu-settings.json'
 config = json.loads(open(file_dir).read())
 train_file=config["HOME"]+config["TRAIN_DATA_PATH"]+'train.csv'
 MODEL_PATH=config["HOME"]+config["MODEL_PATH"]
